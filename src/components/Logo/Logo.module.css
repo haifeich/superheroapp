@@ -1,0 +1,14 @@
+.wrapper {
+  display: block;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: var(--color-blue);
+}
+
+@media (min-width: 35rem) {
+  .wrapper {
+    font-size: 1.5rem;
+  }
+}

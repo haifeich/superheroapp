@@ -1,0 +1,22 @@
+.wrapper {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  flex: 1 1;
+  max-width: 60%;
+}
+
+.wrapper button {
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--color-blue);
+  border: none;
+  color: white;
+}

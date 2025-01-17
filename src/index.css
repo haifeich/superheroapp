@@ -1,0 +1,122 @@
+/*
+  CSS RESET
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  scrollbar-gutter: stable;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* THEME VARIABLES */
+html {
+  --content-width: 65rem;
+  --outer-content-width: 80rem;
+  --viewport-padding: 16px;
+  --header-height: 5rem;
+  --color-text: hsl(0deg 0% 5%);
+  --color-gray: hsl(0, 0%, 40%);
+  --color-blue: hsl(210, 100%, 50%);
+  --color-blue-light: hsl(210, 100%, 90%);
+}
+
+@media (min-width: 35rem) {
+  html {
+    --viewport-padding: 24px;
+  }
+}
+
+/* GLOBAL STYLES */
+html {
+  color: var(--color-text);
+  font-family: "Work Sans", "Work Sans Fallback", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    to top,
+    var(--color-blue-light),
+    hsl(0, 0%, 100%)
+  );
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 650;
+}
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+h3 {
+  font-size: 1.25rem;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5em;
+}
+
+button {
+  padding: 0;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: var(--content-width);
+  padding: 64px var(--viewport-padding);
+  margin: 0 auto;
+}
+
+main h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}

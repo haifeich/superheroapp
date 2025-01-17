@@ -1,0 +1,55 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+  width: 100%;
+  max-width: var(--content-width);
+  padding: 0 var(--viewport-padding);
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2px solid var(--color-blue-light);
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.login {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  transition: background 200ms;
+}
+
+.login:hover {
+  background: var(--color-blue-light);
+}
+
+.action {
+  display: block;
+  border: none;
+  background: transparent;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1000px;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background 200ms;
+}
+
+.action:hover {
+  background: var(--color-blue-light);
+}
+.action svg {
+  display: block;
+}
